@@ -43,7 +43,7 @@ function convert(data) {
   return elements
 }
 
-fetch('wines.json', {mode: 'no-cors'})
+fetch('guessed_wines2.json', {mode: 'no-cors'})
   .then(function(res) {
     return res.json()
   })
@@ -57,7 +57,17 @@ fetch('wines.json', {mode: 'no-cors'})
         .selector('node')
           .css({
             'width': 'mapData(weight, 0, 100, 10, 60)',
-            'height': 'mapData(weight, 0, 100, 10, 60)'
+            'height': 'mapData(weight, 0, 100, 10, 60)',
+            'background-color': function(node) {
+              if ((node.data('group') == "wine") && (node.degree() > 1))
+                return 'red'
+              return 'gray'
+            },
+            'opacity': function(node) {
+              if (node.data("new")) return 0.3;
+              if (node.degree() > 0) return 1;
+              else return 0.3
+            }
           })
         .selector('edge')
           .css({
