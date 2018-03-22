@@ -1,0 +1,443 @@
+{
+  "AlsatianWine": {
+    "parent": "wine",
+    "locatedIn": "Alsace"
+  },
+  "AmericanWine": {
+    "parent": "wine",
+    "locatedIn": "US"
+  },
+  "Beaujolais": {
+    "parent": "wine",
+    "locatedIn": "Beaujolais",
+    "madeFromGrape": "Gamay",
+    "hasSugar": "Dry",
+    "hasBody": "Light",
+    "hasFlavor": "Delicate",
+    "hasColor": "Red"
+  },
+  "Bordeaux": {
+    "parent": "wine",
+    "locatedIn": "Bordeaux"
+  },
+  "Medoc": {
+    "parent": "Bordeaux",
+    "locatedIn": "Medoc",
+    "hasSugar": "Dry",
+    "hasColor": "Red"
+  },
+  "Margaux": {
+    "parent": "Medoc",
+    "locatedIn": "Margaux",
+    "madeFromGrape": "Merlot",
+    "hasFlavor": "Delicate"
+  },
+  "Pauillac": {
+    "parent": "Medoc",
+    "locatedIn": "Pauillac",
+    "madeFromGrape": "Cabernet Sauvignon",
+    "hasFlavor": "Strong",
+    "hasBody": "Full"
+  },
+  "RedBordeaux": {
+    "parent": [
+      "Bordeaux",
+      "RedWine"
+    ],
+    "madeFromGrape": [
+      "Cabernet Sauvignon",
+      "Merlot"
+    ]
+  },
+  "Sauternes": {
+    "parent": [
+      "Bordeaux",
+      "LateHarvest"
+    ],
+    "locatedIn": "Sauternes",
+    "hasBody": "Medium",
+    "hasColor": "White"
+  },
+  "StEmilion": {
+    "parent": "Bordeaux",
+    "madeFromGrape": "Cabernet Sauvignon",
+    "hasColor": "Red",
+    "hasFlavor": "Strong",
+    "locatedIn": "St. Emilon"
+  },
+  "WhiteBordeaux": {
+    "parent": [
+      "Bordeaux",
+      "WhiteWine"
+    ],
+    "madeFromGrape": [
+      "Sauvignon Blanc",
+      "Semillon"
+    ]
+  },
+  "Burgundy": {
+    "parent": "wine",
+    "locatedIn": "Bourgogne",
+    "hasSugar": "Dry"
+  },
+  "RedBurgundy": {
+    "parent": [
+      "Burgundy",
+      "RedWine"
+    ],
+    "madeFromGrape": "Pinot Noir"
+  },
+  "CotesDOr": {
+    "parent": "RedBurgundy",
+    "locatedIn": "Cotes du Rogue",
+    "hasFlavor": "Moderate"
+  },
+  "WhiteBurgundy": {
+    "parent": [
+      "WhiteWine",
+      "Burgundy"
+    ],
+    "madeFromGrape": [
+      "Chardonnay"
+    ]
+  },
+  "Meursault": {
+    "parent": "WhiteBurgundy",
+    "hasBody": "Full",
+    "locatedIn": "Meursault"
+  },
+  "CabernetFranc": {
+    "hasColor": "Red",
+    "hasBody": "Medium",
+    "hasFlavor": "Moderate",
+    "hasSugar": "Dry",
+    "madeFromGrape": "Cabernet Franc"
+  },
+  "CabernetSauvignon": {
+    "parent": "wine",
+    "hasSugar": "Dry",
+    "hasColor": "Red",
+    "hasFlavor": [
+      "Moderate",
+      "Strong"
+    ],
+    "madeFromGrape": "Cabernet Sauvignon",
+    "hasBody": [
+      "Full",
+      "Medium"
+    ]
+  },
+  "CaliforniaWine": {
+    "parent": "wine",
+    "locatedIn": "California"
+  },
+  "Chardonnay": {
+    "parent": "wine",
+    "hasColor": "White",
+    "hasBody": [
+      "Full",
+      "Medium"
+    ],
+    "hasFlavor": [
+      "Moderate",
+      "Strong"
+    ],
+    "madeFromGrape": "Chardonnay"
+  },
+  "CheninBlanc": {
+    "hasBody": [
+      "Full",
+      "Medium"
+    ],
+    "hasColor": "White",
+    "madeFromGrape": "Chenin Blanc",
+    "hasFlavor": "Moderate",
+    "hasSugar": [
+      "Dry",
+      "OffDry"
+    ]
+  },
+  "DessertWine": {
+    "parent": "wine",
+    "hasSugar": [
+      "OffDry",
+      "Sweet"
+    ]
+  },
+  "IceWine": {
+    "parent": [
+      "DessertWine",
+      "LateHarvest"
+    ],
+    "hasFlavor": [
+      "Moderate",
+      "Strong"
+    ],
+    "hasColor": "White",
+    "hasBody": [
+      "Full",
+      "Medium"
+    ]
+  },
+  "SweetRiesling": {
+    "parent": "DessertWine",
+    "hasFlavor": [
+      "Moderate",
+      "Strong"
+    ],
+    "hasSugar": "Sweet",
+    "hasBody": "Full",
+    "madeFromGrape": "Riesling"
+  },
+  "DryWine": {
+    "parent": "wine",
+    "hasSugar": "Dry"
+  },
+  "DryRedWine": {
+    "parent": [
+      "DryWine",
+      "RedWine"
+    ]
+  },
+  "DryWhiteWine": {
+    "parent": [
+      "DryWine",
+      "WhiteWine"
+    ]
+  },
+  "EarlyHarvest": {
+    "parent": "wine",
+    "hasSugar": [
+      "Dry",
+      "OffDry"
+    ]
+  },
+  "FrenchWine": {
+    "locatedIn": "French",
+    "parent": "wine"
+  },
+  "FullBodiedWine": {
+    "parent": "wine",
+    "hasBody": "Full"
+  },
+  "Gamay": {
+    "parent": "wine",
+    "madeFromGrape": "Gamay"
+  },
+  "GermanWine": {
+    "parent": "wine",
+    "locatedIn": "Germany"
+  },
+  "ItalianWine": {
+    "parent": "wine",
+    "locatedIn": "Italy"
+  },
+  "Chianti": {
+    "parent": "ItalianWine",
+    "locatedIn": "Chianti",
+    "hasFlavor": "Moderate",
+    "hasSugar": "Dry",
+    "madeFromGrape": "Sangiovese",
+    "hasColor": "Red",
+    "hasBody": [
+      "Light",
+      "Medium"
+    ]
+  },
+  "LateHarvest": {
+    "parent": "wine",
+    "hasSugar": "Sweet",
+    "hasFlavor": [
+      "Moderate",
+      "Strong"
+    ]
+  },
+  "Loire": {
+    "parent": "wine",
+    "locatedIn": "Loire"
+  },
+  "Anjou": {
+    "parent": "Loire",
+    "hasColor": "Rose",
+    "locatedIn": "Anjou",
+    "hasSugar": "OffDry",
+    "hasBody": "Light",
+    "hasFlavor": "Delicate"
+  },
+  "Muscadet": {
+    "parent": "Loire",
+    "madeFromGrape": "Pinot Blanc",
+    "hasSugar": "Dry",
+    "hasFlavor": "Delicate",
+    "hasBody": "Light",
+    "locatedIn": "Muscadet"
+  },
+  "Sancerre": {
+    "parent": "Loire",
+    "locatedIn": "Sancerre",
+    "hasFlavor": "Delicate",
+    "hasBody": "Medium",
+    "hasSugar": "OffDry",
+    "madeFromGrape": "Sauvignon Blanc"
+  },
+  "Tours": {
+    "parent": "Loire",
+    "madeFromGrape": "Chenin Blanc",
+    "locatedIn": "Tours"
+  },
+  "WhiteLoire": {
+    "parent": [
+      "Loire",
+      "WhiteWine"
+    ],
+    "madeFromGrape": [
+      "Chenin Blanc",
+      "Pinot Blanc",
+      "Sauvignon Blanc"
+    ]
+  },
+  "Meritage": {
+    "parent": "wine",
+    "hasColor": "Red",
+    "madeFromGrape": [
+      "Cabernet Franc",
+      "Cabernet Sauvignon",
+      "Malbec",
+      "Merlot",
+      "Petite Verdot"
+    ]
+  },
+  "Merlot": {
+    "parent": "wine",
+    "madeFromGrape": "Merlot",
+    "hasColor": "Red",
+    "hasBody": [
+      "Light",
+      "Medium"
+    ],
+    "hasSugar": "Dry",
+    "hasFlavor": [
+      "Delicate",
+      "Moderate"
+    ]
+  },
+  "PetiteSyrah": {
+    "parent": "wine",
+    "hasBody": [
+      "Full",
+      "Medium"
+    ],
+    "madeFromGrape": "Petite Syrah",
+    "hasSugar": "Dry",
+    "hasColor": "Red",
+    "hasFlavor": [
+      "Moderate",
+      "Strong"
+    ]
+  },
+  "PinotBlanc": {
+    "parent": "wine",
+    "hasColor": "White",
+    "madeFromGrape": "Pinot Blanc"
+  },
+  "PinotNoir": {
+    "parent": "wine",
+    "madeFromGrape": "Pinot Noir",
+    "hasColor": "Red"
+  },
+  "RedWine": {
+    "parent": "wine",
+    "hasColor": "Red"
+  },
+  "Port": {
+    "parent": "RedWine",
+    "hasFlavor": "Strong",
+    "hasSugar": "Sweet",
+    "locatedIn": "Portugal",
+    "hasBody": "Full"
+  },
+  "Riesling": {
+    "parent": "wine",
+    "madeFromGrape": "Riesling",
+    "hasColor": "White"
+  },
+  "DryRiesling": {
+    "parent": "Riesling",
+    "hasBody": [
+      "Light",
+      "Medium"
+    ],
+    "hasColor": "White",
+    "hasSugar": "Dry",
+    "hasFlavor": "Delicate"
+  },
+  "RoseWine": {
+    "parent": "wine",
+    "hasColor": "Rose"
+  },
+  "SemillonOrSauvignonBlanc": {
+    "parent": "wine",
+    "madeFromGrape": [
+      "Sauvignon Blanc",
+      "Semillon"
+    ],
+    "hasBody": [
+      "Full",
+      "Medium"
+    ],
+    "hasColor": "White"
+  },
+  "SauvignonBlanc": {
+    "parent": "SemillonOrSauvignonBlanc",
+    "madeFromGrape": "Sauvignon Blanc"
+  },
+  "Semillon": {
+    "parent": "SemillonOrSauvignonBlanc",
+    "madeFromGrape": "Semillon"
+  },
+  "SweetWine": {
+    "parent": "wine",
+    "hasSugar": "Sweet"
+  },
+  "TableWine": {
+    "parent": "wine",
+    "hasSugar": "Dry"
+  },
+  "RedTableWine": {
+    "parent": "TableWine",
+    "hasColor": "Red"
+  },
+  "WhiteTableWine": {
+    "parent": "TableWine",
+    "hasColor": "White"
+  },
+  "TexasWine": {
+    "parent": "wine",
+    "locatedIn": "Texas"
+  },
+  "WhiteWine": {
+    "parent": "wine",
+    "hasColor": "White"
+  },
+  "WhiteNonSweetWine": {
+    "parent": "WhiteWine",
+    "hasSugar": [
+      "Dry",
+      "OffDry"
+    ]
+  },
+  "Zinfandel": {
+    "parent": "wine",
+    "hasSugar": "Dry",
+    "madeFromGrape": "Zinfandel",
+    "hasColor": "Red",
+    "hasFlavor": [
+      "Moderate",
+      "Strong"
+    ],
+    "hasBody": [
+      "Full",
+      "Medium"
+    ]
+  }
+}
